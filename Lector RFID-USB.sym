@@ -1,0 +1,356 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017-01A USB_stack_status
+01B     USTATCopy
+01C     usb_state
+01D     __setup_0_tx_size
+01E     USB_address_pending
+01F-020 usb_getdesc_ptr
+021-022 usb_getdesc_len
+023     USB_Interface
+024     connected
+025     enumerated
+026-029 rx_msg
+02A-030 tx_msg
+031-038 Caracter
+039     interrupt0
+03A     interrupt2
+03B.0   ReceivingCodeWiegand
+03B.1   CodeWiegandReceived
+03C     Timer1Interrupts
+03D-05A WiegandBits
+05B-060 SerialCode
+061     IndexBits
+062     i
+063     ascci
+064-065 Blink
+066-06D bits
+06E-077 ID
+078-079 ID_debug
+07A     Convierte_a_USBHID.j
+07A     Wiegand34ToSerial.v
+07A     usb_detach.@SCRATCH1
+07A     RestartRx.@SCRATCH1
+07A     receive_code.@SCRATCH1
+07A     MAIN.@SCRATCH1
+07B     @delay_ms1.P1
+07B     @PRINTF_X_634.P2
+07B     usb_kbhit.en
+07B-07C @MUL1616.P1
+07B     @PSTRINGCN_634.P2
+07B     usb_get_packet.endpoint
+07B     usb_put_packet.endpoint
+07B     usb_task.@SCRATCH1
+07B     RestartRx.@SCRATCH2
+07B     Wiegand34ToSerial.@SCRATCH1
+07B     Convierte_a_USBHID.@SCRATCH1
+07B     @PSTRINGC_634.@SCRATCH1
+07C-07D usb_get_packet.ptr
+07C     @PRINTF_X_634.P1
+07C-07D usb_put_packet.ptr
+07C     usb_kbhit.@SCRATCH1
+07C     Wiegand34ToSerial.@SCRATCH2
+07C     @PSTRINGCN_634.@SCRATCH1
+07C     @PSTRINGC_634.@SCRATCH2
+07D-07E @MUL1616.P1
+07D     usb_kbhit.@SCRATCH2
+07D     @PSTRINGCN_634.@SCRATCH2
+07E-07F usb_get_packet.max
+07E-07F usb_put_packet.len
+07E     @PUTCHAR_1_.P1
+07E     usb_kbhit.@SCRATCH3
+07F     @MUL1616.@SCRATCH1
+080     usb_get_packet_buffer.endpoint
+080     usb_put_packet.tgl
+081-082 usb_get_packet_buffer.ptr
+081-082 usb_put_packet.buff_add
+083-084 usb_get_packet_buffer.max
+083     usb_put_packet.@SCRATCH1
+084     usb_put_packet.@SCRATCH2
+085-086 usb_get_packet_buffer.al
+087     usb_get_packet_buffer.st
+088-089 usb_get_packet_buffer.i
+08A     usb_get_packet_buffer.@SCRATCH1
+08B     usb_get_packet_buffer.@SCRATCH2
+08C     usb_isr.TRNAttempts
+08C     int_ext_handler.@SCRATCH1
+08C     int_ext1_handler.@SCRATCH1
+08D     usb_isr_tok_dne.en
+08D     usb_token_reset.i
+08D     usb_isr.@SCRATCH1
+08D     int_ext_handler.@SCRATCH2
+08D     int_ext1_handler.@SCRATCH2
+08E     usb_isr_tok_dne.pidKey
+08E     usb_token_reset.@SCRATCH1
+08F     usb_flush_out.endpoint
+08F     usb_unstall_ep.endpoint
+08F     usb_endpoint_stalled.endpoint
+08F     usb_stall_ep.endpoint
+08F     usb_isr_tok_out_dne.endpoint
+08F     usb_isr_tok_in_dne.endpoint
+08F     usb_flush_in.endpoint
+08F     usb_set_configured.config
+08F     usb_isr_tkn_setup_StandardInterface.curr_config
+08F     usb_isr_tok_dne.@SCRATCH1
+08F     usb_token_reset.@SCRATCH2
+090.0   usb_endpoint_stalled.direction
+090     usb_copy_desc_seg_to_ep.i
+090.0   usb_stall_ep.direction
+090.0   usb_unstall_ep.direction
+090     usb_set_address.address
+090-091 usb_flush_in.len
+090     usb_set_configured.en
+090     usb_flush_out.tgl
+090     usb_isr_tkn_setup_StandardInterface.@SCRATCH1
+090     usb_Get_Descriptor.@SCRATCH1
+091-092 usb_set_configured.addy
+091     usb_flush_out.i
+091     usb_copy_desc_seg_to_ep.c
+091     usb_endpoint_stalled.st
+091     usb_stall_ep.@SCRATCH1
+091     usb_unstall_ep.@SCRATCH1
+091     usb_isr_tkn_setup_StandardInterface.@SCRATCH2
+092     usb_flush_in.tgl
+092     usb_request_send_response.len
+092-093 usb_flush_out.len
+092     usb_stall_ep.@SCRATCH2
+092     usb_unstall_ep.@SCRATCH2
+092     usb_endpoint_stalled.@SCRATCH1
+092     usb_copy_desc_seg_to_ep.@SCRATCH1
+093     usb_flush_in.i
+093     usb_set_configured.new_uep
+093     usb_stall_ep.@SCRATCH3
+093     usb_unstall_ep.@SCRATCH3
+093     usb_endpoint_stalled.@SCRATCH2
+093     usb_copy_desc_seg_to_ep.@SCRATCH2
+094-095 usb_set_configured.len
+094     usb_tbe.en
+094     usb_flush_in.@SCRATCH1
+094     usb_flush_out.@SCRATCH1
+094     usb_stall_ep.@SCRATCH4
+094     usb_unstall_ep.@SCRATCH4
+095     usb_tbe.@SCRATCH1
+095     usb_flush_in.@SCRATCH2
+095     usb_flush_out.@SCRATCH2
+096     usb_set_configured.i
+096     usb_tbe.@SCRATCH2
+096     usb_flush_in.@SCRATCH3
+096     usb_flush_out.@SCRATCH3
+097     usb_disable_endpoints.i
+097     usb_tbe.@SCRATCH3
+097     usb_flush_in.@SCRATCH4
+097     usb_flush_out.@SCRATCH4
+097     usb_set_configured.@SCRATCH1
+098     usb_disable_endpoint.en
+098     usb_set_configured.@SCRATCH2
+099     usb_endpoint_is_valid.endpoint
+099     usb_set_configured.@SCRATCH3
+099     usb_disable_endpoint.@SCRATCH1
+09A.0   usb_endpoint_is_valid.direction
+09A     usb_set_configured.@SCRATCH4
+09A     usb_disable_endpoint.@SCRATCH2
+09B     usb_disable_endpoint.@SCRATCH3
+09B     usb_endpoint_is_valid.@SCRATCH1
+09C     usb_disable_endpoint.@SCRATCH4
+400-49B g_USBRAM
+F66     UFRML
+F67     UFRMH
+F68     UIR
+F68.0   UIR_URST
+F68.1   UIR_UERR
+F68.2   UIR_ACTV
+F68.3   UIR_TRN
+F68.4   UIR_IDLE
+F68.5   UIR_STALL
+F68.6   UIR_SOF
+F69.0   UIE_URST
+F69     UIE
+F69.1   UIE_UERR
+F69.2   UIE_ACTV
+F69.3   UIE_TRN
+F69.4   UIE_IDLE
+F69.5   UIE_STALL
+F69.6   UIE_SOF
+F6A     UEIR
+F6B     UEIE
+F6C     U1STAT
+F6D     UCON
+F6D.1   UCON_SUSPND
+F6D.2   UCON_RESUME
+F6D.3   UCON_USBEN
+F6D.4   UCON_PKTDIS
+F6D.5   UCON_SE0
+F6D.6   UCON_PBRST
+F6E     UADDR
+F6F     UCFG
+F70-F7F g_UEP
+FA0.5   USBIE
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  usb_clear_trn
+0000BA  usb_ep_tx_type.call
+0000CA  usb_ep_tx_type.data
+0000DA  usb_ep_tx_size.call
+0000EA  usb_ep_tx_size.data
+00010A  usb_ep_rx_size.call
+00012C  usb_ep_rx_size.data
+00014C  USB_CLASS_SPECIFIC_DESC.call
+00015C  USB_CLASS_SPECIFIC_DESC.data
+00019C  USB_CLASS_SPECIFIC_DESC_LOOKUP.call
+0001AC  USB_CLASS_SPECIFIC_DESC_LOOKUP.data
+0001AE  USB_CLASS_SPECIFIC_DESC_LOOKUP_SIZE.call
+0001BE  USB_CLASS_SPECIFIC_DESC_LOOKUP_SIZE.data
+0001C0  USB_CONFIG_DESC.call
+0001D0  USB_CONFIG_DESC.data
+0001FA  USB_NUM_INTERFACES.call
+00020A  USB_NUM_INTERFACES.data
+00020C  USB_CLASS_DESCRIPTORS.call
+00021C  USB_CLASS_DESCRIPTORS.data
+00021E  USB_DEVICE_DESC.call
+00022E  USB_DEVICE_DESC.data
+000240  USB_STRING_DESC_OFFSET.call
+000250  USB_STRING_DESC_OFFSET.data
+000254  USB_STRING_DESC.call
+000264  USB_STRING_DESC.data
+00029C  usb_isr_activity
+0002AC  usb_init_ep0_setup
+0002CC  usb_isr_stall
+0002DA  usb_isr_uerr
+0002E2  usb_endpoint_is_valid
+000338  usb_disable_endpoint
+000384  usb_disable_endpoints
+00039A  usb_token_reset
+0003C2  usb_isr_rst
+0003EC  usb_isr_uidle
+0003F6  usb_isr_sof
+0003FC  usb_request_send_response
+000402  usb_request_stall
+000406  usb_copy_desc_seg_to_ep
+0004B0  @goto11662
+0004D2  usb_Get_Descriptor
+00060C  usb_set_configured
+0007BE  usb_isr_tkn_setup_StandardDevice
+000868  usb_isr_tkn_setup_StandardInterface
+000906  usb_unstall_ep
+00094A  usb_stall_ep
+000990  usb_endpoint_stalled
+0009E6  usb_isr_tkn_setup_StandardEndpoint
+000A44  usb_isr_tkn_setup_ClassInterface
+000A50  usb_isr_tok_setup_dne
+000A82  usb_flush_out
+000B48  usb_tbe
+000B88  usb_flush_in
+000C5E  usb_isr_tok_out_dne
+000C64  usb_set_address
+000C7A  usb_finish_set_address
+000C88  usb_isr_tok_in_dne
+000CA0  usb_isr_tok_dne
+000D6A  usb_isr
+000DDC  int_timer1_handler
+000DEE  int_ext_handler
+000E1E  int_ext1_handler
+000E50  @const1012.call
+000E74  @const1019.call
+000E9C  @const1021.call
+000EA4  @const1023.call
+000EB0  @const1028.call
+000EBE  @delay_ms1
+000EE6  @PUTCHAR_1_
+000F28  @PSTRINGC_634
+000F48  usb_detach
+000F6C  usb_init_cs
+000F72  RestartRx
+000FA6  usb_attach
+000FC8  usb_task
+000FEA  usb_enumerated
+000FF2  @MUL1616
+001012  @PSTRINGCN_634
+001030  @PRINTF_X_634
+00106E  Wiegand34ToSerial
+0011CE  usb_put_packet
+00126E  usb_kbhit
+0012A6  usb_get_packet_buffer
+001368  usb_get_packet
+0013AA  usb_rx_task
+0013C8  Convierte_a_USBHID
+001824  receive_code
+001854  MAIN
+001854  @cinit1
+001872  @cinit2
+
+Project Directory:
+    P:\Proyecto - Lector USB\Mifare USB\
+
+Project Files:
+    Lector RFID-USB.c                                       [11-jul.-16 19:17  CRC=18DF761C]
+    C:\Program Files (x86)\PICC\Devices\18F2455.h           [12-nov.-13 14:35  CRC=13DBFC6E]
+    C:\Program Files (x86)\PICC\Drivers\pic18_usb.h         [11-mar.-13 16:56  CRC=A13AD10C]
+    C:\Program Files (x86)\PICC\Drivers\usb_hw_layer.h      [31-ago.-10 14:26  CRC=8105D92F]
+    usb_desc_FI.h                                           [11-jul.-16 18:38  CRC=39C278E2]
+    C:\Program Files (x86)\PICC\Drivers\usb.h               [26-feb.-13 14:40  CRC=0402FA1E]
+    C:\Program Files (x86)\PICC\Drivers\usb.c               [09-jul.-13 14:06  CRC=88E8C8E2]
+    C:\Program Files (x86)\PICC\Drivers\pic18_usb.c         [10-sep.-13 14:56  CRC=24805598]
+    C:\Program Files (x86)\PICC\Drivers\ctype.h             [03-ene.-08 13:55  CRC=2D1F019F]
+
+Source signature=9468B17D
+
+Units:
+    Lector RFID-USB (main)
+
+Compiler Settings:
+    Processor:      PIC18F2455
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   Lector RFID-USB.xsym
+    Errors:      Lector RFID-USB.err
+    Ext Symbols: Lector RFID-USB.esym
+    INHX32:      Lector RFID-USB.hex
+    Symbols:     Lector RFID-USB.sym
+    List:        Lector RFID-USB.lst
+    Debug/COFF:  Lector RFID-USB.cof
+    Project:     Lector RFID-USB.ccspjt
+    Call Tree:   Lector RFID-USB.tre
+    Statistics:  Lector RFID-USB.STA

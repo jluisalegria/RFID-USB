@@ -1,0 +1,13 @@
+>>> Warning 203 "C:\Program Files (x86)\PICC\Drivers\pic18_usb.c" Line 643(1,1): Condition always TRUE
+>>> Warning 216 "Lector RFID-USB.c" Line 453(1,2): Interrupts disabled during call to prevent re-entrancy:  (usb_token_reset)
+>>> Warning 216 "Lector RFID-USB.c" Line 453(1,2): Interrupts disabled during call to prevent re-entrancy:  (usb_tbe)
+>>> Warning 216 "Lector RFID-USB.c" Line 453(1,2): Interrupts disabled during call to prevent re-entrancy:  (usb_flush_in)
+>>> Warning 216 "Lector RFID-USB.c" Line 453(1,2): Interrupts disabled during call to prevent re-entrancy:  (usb_flush_out)
+>>> Warning 202 "Lector RFID-USB.c" Line 23(6,15): Variable never used:   connected
+>>> Warning 202 "Lector RFID-USB.c" Line 24(6,16): Variable never used:   enumerated
+>>> Warning 202 "Lector RFID-USB.c" Line 36(6,16): Variable never used:   SerialCode
+>>> Warning 202 "Lector RFID-USB.c" Line 39(6,11): Variable never used:   ascci
+>>> Warning 202 "Lector RFID-USB.c" Line 40(7,12): Variable never used:   Blink
+      Memory usage:   ROM=26%      RAM=14% - 15%
+      0 Errors,  10 Warnings.
+Build Successful.
