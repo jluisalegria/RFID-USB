@@ -191,7 +191,7 @@ void Wiegand34ToSerial(void)
 //****************************************************************************
 void Convierte_a_USBHID(void)
 {
-
+//separo en 6 digitos los 3 bytes hexadecimales
    Caracter[0]= ID[6]>>4 & 0X0F;
    Caracter[1]= ID[6] & 0X0F;
    Caracter[2]= ID[7]>>4 & 0X0F;
@@ -217,14 +217,14 @@ void Convierte_a_USBHID(void)
          case 0X00:  tx_msg[2]=0X27;
                      usb_put_packet(1,tx_msg,sizeof(tx_msg),USB_DTS_TOGGLE);
                      delay_ms(10);
-                     usb_rx_task();
+                     //usb_rx_task();
                      usb_task();
                      //fprintf(debug,"0");
                      break;
          case 0X01:  tx_msg[2]=0X1E;
                      usb_put_packet(1,tx_msg,sizeof(tx_msg),USB_DTS_TOGGLE);
                      delay_ms(10);
-                     usb_rx_task();
+                     //usb_rx_task();
                      usb_task();
                       //fprintf(debug,"1");
                     
@@ -232,7 +232,7 @@ void Convierte_a_USBHID(void)
          case 0X02:  tx_msg[2]=0X1F;
                      usb_put_packet(1,tx_msg,sizeof(tx_msg),USB_DTS_TOGGLE);
                      delay_ms(10);
-                     usb_rx_task();
+                     //usb_rx_task();
                       usb_task();
                       //fprintf(debug,"2");
                 
@@ -240,7 +240,7 @@ void Convierte_a_USBHID(void)
          case 0X03:  tx_msg[2]=0X20;
                      usb_put_packet(1,tx_msg,sizeof(tx_msg),USB_DTS_TOGGLE);
                      delay_ms(10);
-                     usb_rx_task();
+                     //usb_rx_task();
                       usb_task();
                       //fprintf(debug,"3");
                      
@@ -248,7 +248,7 @@ void Convierte_a_USBHID(void)
          case 0X04:  tx_msg[2]=0X21;
                      usb_put_packet(1,tx_msg,sizeof(tx_msg),USB_DTS_TOGGLE);
                      delay_ms(10);
-                     usb_rx_task();
+                     //usb_rx_task();
                       usb_task();
                       //fprintf(debug,"4");
                     
@@ -256,7 +256,7 @@ void Convierte_a_USBHID(void)
          case 0X05:  tx_msg[2]=0X22;
                      usb_put_packet(1,tx_msg,sizeof(tx_msg),USB_DTS_TOGGLE);
                      delay_ms(10);
-                     usb_rx_task();
+                     //usb_rx_task();
                       usb_task();
                       //fprintf(debug,"5");
                      
@@ -264,7 +264,7 @@ void Convierte_a_USBHID(void)
          case 0X06:  tx_msg[2]=0X23;
                      usb_put_packet(1,tx_msg,sizeof(tx_msg),USB_DTS_TOGGLE);
                      delay_ms(10);
-                     usb_rx_task();
+                     //usb_rx_task();
                      usb_task();
                      // fprintf(debug,"6");
                     
@@ -272,7 +272,7 @@ void Convierte_a_USBHID(void)
          case 0X07:  tx_msg[2]=0X24;
                      usb_put_packet(1,tx_msg,sizeof(tx_msg),USB_DTS_TOGGLE);
                      delay_ms(10);
-                     usb_rx_task();
+                     //usb_rx_task();
                      usb_task();
                       //fprintf(debug,"7");
                   
@@ -280,7 +280,7 @@ void Convierte_a_USBHID(void)
          case 0X08:  tx_msg[2]=0X25;
                      usb_put_packet(1,tx_msg,sizeof(tx_msg),USB_DTS_TOGGLE);
                      delay_ms(10);
-                     usb_rx_task();
+                     //usb_rx_task();
                      usb_task();
                       //fprintf(debug,"8");
                    
@@ -288,55 +288,61 @@ void Convierte_a_USBHID(void)
          case 0X09:  tx_msg[2]=0X26;
                      usb_put_packet(1,tx_msg,sizeof(tx_msg),USB_DTS_TOGGLE);
                      delay_ms(10);
-                     usb_rx_task();
+                     //usb_rx_task();
                      usb_task();
                       //fprintf(debug,"9");
                    
                      break;
          case 0X0A:  tx_msg[2]=0X04;
+                     tx_msg[0]=2;
                      usb_put_packet(1,tx_msg,sizeof(tx_msg),USB_DTS_TOGGLE);
                      delay_ms(10);
-                     usb_rx_task();
+                     //usb_rx_task();
                       usb_task();
                       //fprintf(debug,"A");
                      
                      break;
          case 0X0B:  tx_msg[2]=0X05;
+                     tx_msg[0]=2;
                      usb_put_packet(1,tx_msg,sizeof(tx_msg),USB_DTS_TOGGLE);
                      delay_ms(10);
-                     usb_rx_task();
+                     //usb_rx_task();
                      usb_task();
                       //fprintf(debug,"B");
                      
                      break;
          case 0X0C:  tx_msg[2]=0X06;
+                     tx_msg[0]=2;
                      usb_put_packet(1,tx_msg,sizeof(tx_msg),USB_DTS_TOGGLE);
                      delay_ms(10);
-                     usb_rx_task();
+                     //usb_rx_task();
                       usb_task();
                       //fprintf(debug,"C");
                     
                      break;
          case 0X0D:  tx_msg[2]=0X07;
+                     tx_msg[0]=2;
                      usb_put_packet(1,tx_msg,sizeof(tx_msg),USB_DTS_TOGGLE);
                      delay_ms(10);
-                     usb_rx_task();
+                     //usb_rx_task();
                       usb_task();
                       //fprintf(debug,"D");
                     
                      break;
          case 0X0E:  tx_msg[2]=0X08;
+                     tx_msg[0]=2;
                      usb_put_packet(1,tx_msg,sizeof(tx_msg),USB_DTS_TOGGLE);
                      delay_ms(10);
-                     usb_rx_task();
+                     //usb_rx_task();
                       usb_task();
                       //fprintf(debug,"E");
                      
                      break;
          case 0X0F:  tx_msg[2]=0X09;
+                     tx_msg[0]=2;
                      usb_put_packet(1,tx_msg,sizeof(tx_msg),USB_DTS_TOGGLE);
                      delay_ms(10);
-                     usb_rx_task();
+                     //usb_rx_task();
                      usb_task();
                       //fprintf(debug,"F");
                      
@@ -346,17 +352,17 @@ void Convierte_a_USBHID(void)
       }
    }
    
-    tx_msg[0]=2;        //Sin teclas especiales presionadas
+    tx_msg[0]=0;        //Sin teclas especiales presionadas
     tx_msg[2]=0X28;     //Tecla enter
     usb_put_packet(1,tx_msg,sizeof(tx_msg),USB_DTS_TOGGLE);
     delay_ms(10);
-    usb_rx_task();
+    //usb_rx_task();
    usb_task();
     tx_msg[0]=0;        //Sin teclas especiales presionadas
     tx_msg[2]=0;     //Tecla enter
     usb_put_packet(1,tx_msg,sizeof(tx_msg),USB_DTS_TOGGLE);
     delay_ms(10);
-    usb_rx_task();
+    //usb_rx_task();
     usb_task();
     fprintf(debug,"terminado\r\n");
     
